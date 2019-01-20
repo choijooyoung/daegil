@@ -82,7 +82,7 @@ function 말추가(){
   let 말할것;
   if(대답=="학사일정"){
 	  var mon=parseInt(입력값.split("/")[0]);
-	  var day=parseInt(입력값.split("/")[1][0]);
+	  var day=parseInt(입력값.split("/")[1].split(" ")[0]);
 	  대답할것=mon+"월 "+day+"일 ";
 	  if(mon<9)
 		mon+=12
