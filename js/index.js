@@ -45,6 +45,7 @@ function 말추가(){
 	  
 	  if(mon<9)
 		mon+=12
+	  console.log(학사일정);
 	  대답할것=mon+"월 "+day+"일"+"학사일정은 "+학사일정[(day-1)*6+mon%9];
 	  말할것=대답할것;
   }
