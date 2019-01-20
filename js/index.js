@@ -89,9 +89,8 @@ function 말추가(){
 	  console.log(학사일정);
 	  대답할것=mon+"월 "+day+"일 "+"학사일정은 "+학사일정[0];
 	  console.log(대답할것);
-	  말할것=대답할것;
   }
-  else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
+  말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
   말.setAttribute("class","컴");
   대화창.appendChild(말);
