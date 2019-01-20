@@ -45,7 +45,7 @@ function 말추가(){
 	  
 	  if(mon<9)
 		mon+=12
-	  말할것="{mon}월 {day}일";
+	  대답할것="{mon}월 {day}일";
   }
   else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
