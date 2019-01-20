@@ -38,14 +38,15 @@ function 말추가(){
   대화창.appendChild(br);
   말 = document.createElement("li");
   let 대답할것 = 대답후보들[대답][난수생성(0,대답후보들[대답].length-1)];
+  let 말할것;
   if(대답할것=="학사일정"){
 	  var mon=대답.split("/")[0];
 	  var day=대답.split("/")[1][0];
 	  if(mon<9)
 		mon+=12
-	  var 말할것=학사일정[(day-1)*6+mon%9];
+	  말할것=학사일정[(day-1)*6+mon%9]+"입니다";
   }
-  말할것 += 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
+  else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
   말.setAttribute("class","컴");
   대화창.appendChild(말);
