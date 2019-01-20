@@ -42,9 +42,10 @@ function 말추가(){
   if(대답할것=="학사일정"){
 	  var mon=대답.split("/")[0];
 	  var day=대답.split("/")[1][0];
+	  
 	  if(mon<9)
 		mon+=12
-	  말할것=학사일정[(day-1)*6+mon%9]+"입니다";
+	  말할것="{mon}월 {day}일";
   }
   else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
