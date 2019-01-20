@@ -78,7 +78,7 @@ function 말추가(){
   대화창.appendChild(말);
   대화창.appendChild(br);
   말 = document.createElement("li");
-  let 대답할것 = 대답후보들[대답][난수생성(0,대답후보들[대답].length-1)];
+  var 대답할것 = 대답후보들[대답][난수생성(0,대답후보들[대답].length-1)];
   let 말할것;
   if(대답=="학사일정"){
 	  var mon=입력값.split("/")[0];
