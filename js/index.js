@@ -95,6 +95,7 @@ function 말추가(){
   말.setAttribute("class","컴");
   대화창.appendChild(말);
   대화창.appendChild(br);
+  말 = document.createElement("li");
   입력칸.value="";
   
   말하기(말할것);
