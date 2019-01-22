@@ -76,6 +76,7 @@ function 말추가(){
   let 입력값 = 입력칸.value;
   말.innerHTML=입력값;
   말.setAttribute("class","나");
+  대화창.innerHTML=document.cookie.split("=")[1].replace(";","");
   대화창.appendChild(말);
   대화창.appendChild(br);
   말 = document.createElement("li");
