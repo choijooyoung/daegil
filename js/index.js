@@ -70,13 +70,11 @@ function 말하기(말할말){
 }
   
 function 말추가(){
-  document.cookie='dd=<li class="나">asfd</li><li class="컴">무슨 말인지 모르겠어요</li><br>;';
   let 말 = document.createElement("li");
   var 대답 = 대답해석(입력칸.value);
   let 입력값 = 입력칸.value;
   말.innerHTML=입력값;
   말.setAttribute("class","나");
-  대화창.innerHTML=document.cookie.split("=")[1].replace(";","");
   대화창.appendChild(말);
   대화창.appendChild(br);
   말 = document.createElement("li");
