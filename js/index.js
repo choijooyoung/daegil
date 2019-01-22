@@ -70,6 +70,7 @@ function 말하기(말할말){
 }
   
 function 말추가(){
+  document.cookie="dd='dd'";
   let 말 = document.createElement("li");
   var 대답 = 대답해석(입력칸.value);
   let 입력값 = 입력칸.value;
