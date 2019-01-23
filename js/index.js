@@ -40,8 +40,8 @@ let 급식=["[중식]*조랭이떡국(주식)1.5.6.16.*우리밀찐빵6.*파인�
 	
 	
 	
-const 입력후보들 = {"교화":["학교꽃","교화"],"교목":["교목", "학교나무"],"교가":["교가", "학교노래"],"교표":["교표","학교로고"],"학사일정":["학사일정","학교일정"]};
-const 대답후보들 = {"교화":["교화는 장미입니다.<img src='https://images.unsplash.com/photo-1519058497187-7167f17c6daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'></img>","교화는 장미에요.<img src='https://images.unsplash.com/photo-1519058497187-7167f17c6daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'</img>"],"교가":["<audio src='https://choijooyoung.github.io/daegil/d.mp3' controls></audio>"],"교목":["교목은 은행나무입니다.<img src='https://st3.depositphotos.com/1325352/16017/v/1600/depositphotos_160171040-stock-illustration-ginkgo-autumn-leaves-fall-icon.jpg'></img>","교목은 은행나무에요.<img src='https://st3.depositphotos.com/1325352/16017/v/1600/depositphotos_160171040-stock-illustration-ginkgo-autumn-leaves-fall-icon.jpg'></img>"],"뭔말":["무슨 말인지 모르겠어요","무슨 말이죠?","뭐라고요?","다시 말해 주세요."],"교표":["<img src='https://i.imgur.com/if968Z7.png?1'></img>"],"학사일정":["입니다","이에요"]};
+const 입력후보들 = {"교화":["학교꽃","교화"],"교목":["교목", "학교나무"],"교가":["교가", "학교노래"],"교표":["교표","학교로고"],"학사일정":["학사일정","학교일정"],"급식":["급식","학교밥"]};
+const 대답후보들 = {"교화":["교화는 장미입니다.<img src='https://images.unsplash.com/photo-1519058497187-7167f17c6daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'></img>","교화는 장미에요.<img src='https://images.unsplash.com/photo-1519058497187-7167f17c6daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=80'</img>"],"교가":["<audio src='https://choijooyoung.github.io/daegil/d.mp3' controls></audio>"],"교목":["교목은 은행나무입니다.<img src='https://st3.depositphotos.com/1325352/16017/v/1600/depositphotos_160171040-stock-illustration-ginkgo-autumn-leaves-fall-icon.jpg'></img>","교목은 은행나무에요.<img src='https://st3.depositphotos.com/1325352/16017/v/1600/depositphotos_160171040-stock-illustration-ginkgo-autumn-leaves-fall-icon.jpg'></img>"],"뭔말":["무슨 말인지 모르겠어요","무슨 말이죠?","뭐라고요?","다시 말해 주세요."],"교표":["<img src='https://i.imgur.com/if968Z7.png?1'></img>"],"학사일정":["입니다","이에요"],"급식":["입니다","이에요"]};
 
 const 대화창 = document.querySelector("#대화창");
 const 입력칸 = document.querySelector("#입력칸");
@@ -89,6 +89,20 @@ function 말추가(){
 	  console.log(학사일정);
 	  대답할것+="학사일정은 </br>"+학사일정[(day-1)*6+mon%9];
 	  console.log(대답할것);
+  }
+  if(대답="급식"){
+	var mon=parseInt(입력값.split("/")[0]);
+	var day=parseInt(입력값.split("/")[1].split(" ")[0]);
+ 	if(Number.isNaN(parseInt(mon))){
+		for(var i in 급식){
+			if(급식[i].indexOf(aaaa)!=-1){
+				대답할것=parseInt(i)+1;
+			}
+		}
+	}
+	else{
+		
+	}
   }
   말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
