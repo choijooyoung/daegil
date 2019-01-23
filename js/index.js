@@ -93,22 +93,23 @@ function 말추가(){
   }
   
   if(대답=="급식"){
-	var mon=parseInt(입력값.split("/")[0]);
-	var day=parseInt(입력값.split("/")[1].split(" ")[0]);
+	var mon=입력값.split("/")[0];
+	var day=입력값.split("/")[1].split(" ")[0];
  	if(Number.isNaN(parseInt(mon))){
 		for(var i in 급식){
-			if(급식[i].indexOf(aaaa)!=-1){
+			if(급식[i].indexOf(mon)!=-1){
 				대답할것=parseInt(i)+1;
 			}
 		}
 	}
 	else{
-		대답할것=급식[day];
+		대답할것=급식[parseInt(day)];
 	}
 	  말할것=대답할것;
-console.log(대답할것);
+	console.log(급식[0]);
   }
-  else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
+	
+  else {말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");}
   말.innerHTML = 대답할것;
   말.setAttribute("class","컴");
   대화창.appendChild(말);
