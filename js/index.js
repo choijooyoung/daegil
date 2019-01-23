@@ -106,6 +106,7 @@ function 말추가(){
 		대답할것=급식[day];
 	}
 	  말할것=대답할것;
+console.log(대답할것);
   }
   else 말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");
   말.innerHTML = 대답할것;
