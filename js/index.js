@@ -106,7 +106,7 @@ function 말추가(){
 		대답할것=급식[parseInt(day)];
 	}
 	  말할것=대답할것;
-	console.log(급식[0]);
+	console.log(급식[parseInt(day)]);
   }
 	
   else {말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");}
