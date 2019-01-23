@@ -98,15 +98,15 @@ function 말추가(){
  	if(Number.isNaN(parseInt(mon))){
 		for(var i in 급식){
 			if(급식[i].indexOf(mon)!=-1){
-				대답할것=parseInt(i)+1;
+				대답할것=parseInt(i)-1;
 			}
 		}
 	}
 	else{
-		대답할것=급식[parseInt(day)+1];
+		대답할것=급식[parseInt(day)-1];
 	}
 	  말할것=대답할것;
-	console.log(급식[parseInt(day)+1]);
+	console.log(급식[parseInt(day)-1]);
   }
 	
   else {말할것 = 대답할것.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, "");}
