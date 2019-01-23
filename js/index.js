@@ -98,7 +98,7 @@ function 말추가(){
  	if(Number.isNaN(parseInt(mon))){
 		for(var i in 급식){
 			if(급식[i].indexOf(mon)!=-1){
-				대답할것=parseInt(i)-1;
+				대답할것=parseInt(i)+1;
 			}
 		}
 	}
