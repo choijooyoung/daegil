@@ -86,8 +86,8 @@
 }
 #입력창{
     position:absolute;
-  top:500px;
-  height:100%-500px;
+  top:90%;
+  height:10%;
 }
 .나{
   float:right;
