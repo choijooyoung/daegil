@@ -38,7 +38,7 @@
 
 #입력칸{
   all:unset;
-  height:40px;
+  height:100%-500px;
   position:absolute;
   border:0.16em solid darksalmon;
   border-left:none;
