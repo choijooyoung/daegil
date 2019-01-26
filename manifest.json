@@ -1,7 +1,8 @@
 {
-  "short_name": "AirHorner",
-  "name": "Kinlan's AirHorner of Infamy",
+  "short_name": "대길앱",
+  "name": "대길챗봇",
   "theme_color": "#2196F3",
+  "background_color":"#2196F3",
   "display":"fullscreen",
    "icons": [
     {
