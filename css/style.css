@@ -40,7 +40,7 @@
   all:unset;
   height:10%-0.16em;
   position:absolute;
-  border:0.8px solid darksalmon;
+  border:1.8px solid darksalmon;
   border-left:none;
   width:14.2em;
   left:4em;
@@ -69,7 +69,7 @@
   position:absolute;
   font-size:1.6em;
   color:salmon;
-  border:1px solid darksalmon;
+  border:2px solid darksalmon;
   width:2.3em;
   border-radius:0px 0px 0px 10px;
   text-align:center;
