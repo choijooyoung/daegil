@@ -7,9 +7,9 @@
    "icons": [
     {
       "src": "https://i.imgur.com/if968Z7.png?1",
-      "sizes": "1024×1024 196×196 144x144 64x64 32x32 24x24 16x16",
+      "sizes": "1024×1024 192×192 144x144 64x64 32x32 24x24 16x16",
       "type": "image/png"
     }
   ],
-  "start_url":"/index.html"
+  "start_url":"index.html?launcher=true"
   }
