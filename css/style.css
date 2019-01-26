@@ -50,7 +50,7 @@
   all:unset;
   font-size:1.6em;
   color:salmon;
-  border:0.09em solid darksalmon;
+  border:0.9px solid darksalmon;
   width:2.3em;
   text-align:center;
   font-family:fontello;
@@ -69,7 +69,7 @@
   position:absolute;
   font-size:1.6em;
   color:salmon;
-  border:0.1em solid darksalmon;
+  border:1px solid darksalmon;
   width:2.3em;
   border-radius:0px 0px 0px 10px;
   text-align:center;
