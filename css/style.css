@@ -40,7 +40,7 @@
   all:unset;
   height:10%-0.16em;
   position:absolute;
-  border:0.16em solid darksalmon;
+  border:0.8px solid darksalmon;
   border-left:none;
   width:14.2em;
   left:4em;
