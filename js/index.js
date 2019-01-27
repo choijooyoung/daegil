@@ -1,16 +1,10 @@
 {
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }).catch(function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}	
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
 	
 let 학사일정=["토요휴업일","","","토요휴업일","겨울방학 신정","","","대길어울마당","","","겨울방학","토요휴업일","","개천절","토요휴업일","","겨울방학",""
 ,"","","","","겨울방학","설날","임원수련교육/3/4/5/6","","","","겨울방학 토요휴업일","설날","","토요휴업일","","","겨울방학","설날","","",""
