@@ -4,12 +4,32 @@
   "theme_color": "skyblue",
   "background_color":"skyblue",
   "display":"fullscreen",
-   "icons": [
-    {
-      "src": "https://i.imgur.com/if968Z7.png?1",
-      "sizes": "1024×1024 192×192 144x144 64x64 32x32 24x24 16x16",
-      "type": "image/png"
-    }
+     icons: [
+  {
+    src: 'https://www.zerocho.com/launcher-icon-1x.png',
+    type: 'image/png',
+    sizes: '48x48',
+  },
+  {
+    src: 'https://www.zerocho.com/launcher-icon-2x.png',
+    type: 'image/png',
+    sizes: '96x96',
+  },
+  {
+    src: 'https://www.zerocho.com/launcher-icon-3x.png',
+    type: 'image/png',
+    sizes: '144x144',
+  },
+  {
+    src: 'https://www.zerocho.com/launcher-icon-4x.png',
+    type: 'image/png',
+    sizes: '192x192',
+  },
+  {
+    src: 'https://www.zerocho.com/favicon.png',
+    type: 'image/png',
+    sizes: '1024x1024',
+  },
   ],
   "start_url":"index.html?launcher=true"
   }
