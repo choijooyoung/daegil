@@ -1,5 +1,17 @@
 {
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}	
+	
 let 학사일정=["토요휴업일","","","토요휴업일","겨울방학 신정","","","대길어울마당","","","겨울방학","토요휴업일","","개천절","토요휴업일","","겨울방학",""
 ,"","","","","겨울방학","설날","임원수련교육/3/4/5/6","","","","겨울방학 토요휴업일","설날","","토요휴업일","","","겨울방학","설날","","",""
 ,"","겨울방학","","토요휴업일","단기방학","","토요휴업일","겨울방학","학교대청소의날","","한글날","","","겨울방학","토요휴업일","","우리글바로쓰기대회/1/2","토요휴업일","","겨울방학","","","계절스포츠/5/6","","","겨울방학","","","계절스포츠/5/6 진로현장체험학습/1","","","겨울방학 토요휴업일","","","토요휴업일","","","겨울방학","","개교기념일","","","","겨울방학","","토요휴업일","","대입수학능력시험일","토요휴업일",
