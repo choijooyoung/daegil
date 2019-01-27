@@ -2,32 +2,11 @@
   "short_name": "대길앱",
   "name": "대길챗봇",
      "icons": [
-  {
-   "src": "https://www.zerocho.com/launcher-icon-1x.png",
+  
+   "src": "icon.png",
     "type": "image/png",
-    "sizes": "48x48"
-  },
-  {
-   "src": "https://www.zerocho.com/launcher-icon-2x.png",
-    "type": "image/png",
-    "sizes": "96x96"
-  },
-  {
-   "src": "https://www.zerocho.com/launcher-icon-3x.png",
-    "type": "image/png",
-    "sizes": "144x144"
-  },
-  {
-    "src": "https://www.zerocho.com/launcher-icon-4x.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  },
-  {
-    "src": "https://www.zerocho.com/favicon.png",
-    "type": "image/png",
-    "sizes": "1024x1024"
-  }
-  ],
+    "sizes": "48x48 96x96 144x144 192x192 1024x1024"]
+  ,
   
   "theme_color": "lightskyblue",
   "background_color":"lightskyblue",
