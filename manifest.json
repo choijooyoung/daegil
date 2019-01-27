@@ -4,7 +4,7 @@
   "theme_color": "skyblue",
   "background_color":"skyblue",
   "display":"fullscreen",
-     icons: [
+     "icons": [
   {
     src: 'https://www.zerocho.com/launcher-icon-1x.png',
     type: 'image/png',
