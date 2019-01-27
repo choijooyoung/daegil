@@ -31,5 +31,8 @@
     "sizes": "1024x1024"
   }
   ],
-  "start_url":"index.html?launcher=true"
+  "start_url":"index.html",
+  "related_applications": [{
+    "platform": "web"
+  }]
   }
