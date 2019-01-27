@@ -1,8 +1,6 @@
 {
   "short_name": "대길앱",
   "name": "대길챗봇",
-  "theme_color": "skyblue",
-  "background_color":"skyblue",
   "display":"fullscreen",
      "icons": [
   {
@@ -31,5 +29,8 @@
     "sizes": "1024x1024"
   }
   ],
+  
+  "theme_color": "skyblue",
+  "background_color":"skyblue",
   "start_url":"daegil/"
   }
