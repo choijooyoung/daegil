@@ -1,11 +1,11 @@
 {
   "short_name": "대길앱",
   "name": "대길챗봇",
-     "icons": [
-  
-   "src": "icon.png",
+     "icons": {
+    "src": "icon.png",
     "type": "image/png",
-    "sizes": "48x48 96x96 144x144 192x192 1024x1024"]
+    "sizes": "48x48 96x96 144x144 192x192 1024x1024"
+     }
   ,
   
   "theme_color": "lightskyblue",
