@@ -2,7 +2,7 @@
   "short_name": "대길앱",
   "name": "대길챗봇",
      "icons": {
-    "src": "icon.png",
+    "src": "https://i.imgur.com/if968Z7.png?1",
     "type": "image/png",
     "sizes": "48x48 96x96 144x144 192x192 1024x1024"
      }
