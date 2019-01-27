@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
         '/daegil/index.html',
         '/daegil/css/style.css',
         '/daegil/css/fontello.css',
-        '/daegil/script/index.js',
+        '/daegil/js/index.js',
         '/daegil/d.mp3',
         '/daegil/manifest.json',
         '/daegil/font/fontello.eot',
