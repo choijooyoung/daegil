@@ -1,7 +1,6 @@
 {
   "short_name": "대길앱",
   "name": "대길챗봇",
-  "display":"fullscreen",
      "icons": [
   {
    "src": "https://www.zerocho.com/launcher-icon-1x.png",
@@ -30,7 +29,8 @@
   }
   ],
   
-  "theme_color": "skyblue",
-  "background_color":"skyblue",
+  "theme_color": "lightskyblue",
+  "background_color":"lightskyblue",
+  "display":"fullscreen",
   "start_url":"daegil/"
   }
