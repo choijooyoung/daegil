@@ -29,7 +29,7 @@
     "src": "https://www.zerocho.com/favicon.png",
     "type": "image/png",
     "sizes": "1024x1024"
-  },
+  }
   ],
   "start_url":"index.html?launcher=true"
   }
