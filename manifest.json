@@ -8,8 +8,8 @@
                {"src":"logo/logo5.png","type":"image/png","sizes":"1024x1024"}]
   ,
   
-  "theme_color": "lightskyblue",
-  "background_color":"lightskyblue",
+  "theme_color": "#ffcc00",
+  "background_color":"#ffcc00",
   "display":"fullscreen",
   "start_url":"daegil/index.html"
   }
