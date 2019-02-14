@@ -87,8 +87,16 @@ function 말추가(){
   var 대답할것 = 대답후보들[대답][난수생성(0,대답후보들[대답].length-1)];
   let 말할것;
   if(대답=="학사일정"){
-	  var mon=parseInt(입력값.split("/")[0]);
-	  var day=parseInt(입력값.split("/")[1].split(" ")[0]);
+	  var mon=입력값.split("/")[0];
+	  var day=입력값.split("/")[1].split(" ")[0];
+	  if(Number.isNaN(parseInt(mon)){
+	     for(var i in 급식){
+			if(급식[i].indexOf(mon)!=-1){
+				대답할것=parseInt(i)+1;
+			}
+		}
+	  	대답할것+="일 에요";
+  	  }
 	  대답할것=mon+"월 "+day+"일 ";
 	  if(mon<9)
 		mon+=12
@@ -107,7 +115,9 @@ function 말추가(){
 				대답할것=parseInt(i)+1;
 			}
 		}
+		대답할것+="일 에요";
 	}
+	
 	else{
 		대답할것=급식[parseInt(day)-1].replace(/[*]/g,'<br>');
 	}
