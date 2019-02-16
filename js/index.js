@@ -90,8 +90,8 @@ function 말추가(){
 	  var mon=입력값.split("/")[0];
 	  var day=입력값.split("/")[1].split(" ")[0];
 	  if(Number.isNaN(parseInt(mon))){
-	     for(var i in 급식){
-			if(급식[i].indexOf(mon)!=-1){
+	     for(var i in 학사일정){
+			if(학사일정[i].indexOf(mon)!=-1){
 				대답할것=parseInt(i)+1;
 			}
 		}
